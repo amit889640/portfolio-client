@@ -1,0 +1,82 @@
+.about-main {
+    background-image: url('../../assets/images/brandBanner2.jpg');
+    height: 100vh;
+    background-size: cover;
+    font-family: monospace;
+}
+
+
+.photo-img {
+    background-image: url('../../assets/images/photo-amit2.jpeg');
+    height: 87vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 0.25rem solid rgb(42, 6, 6);
+    border-radius: 20%;
+    opacity: .6;
+    width: 26vw;
+    margin: auto;
+    margin-top: 6%;
+    margin-left: 40%;
+    position: relative;
+    animation-name: photo-anim;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+
+
+@keyframes photo-anim {
+    0% {
+        left: 0px;
+    }
+
+    25% {
+        left: 200px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    .about-main {
+        background-image: url('');
+        background-color: #0a0827;
+    }
+
+
+    .intro-grid {
+        background-image: url('../../assets/images/brandBanner2.jpg');
+        margin: 23px !important;
+        margin-top: 35px !important;
+        /* border: 46px solid #0a0827; */
+        border-radius: 6%;
+    }
+
+    .intro {
+        margin: auto;
+    }
+
+    .photo-img {
+        background-image: url(http://localhost:3000/static/media/photo-amit2.ec72877e3fbcfb0bbed8.jpeg);
+        height: 98vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* border: 0.25rem solid rgb(28, 1, 1); */
+        border-radius: 6%;
+        width: 88%;
+        opacity: 01;
+        margin: auto;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+
+    .photo-grid {
+        background-color: #0a0827;
+    }
+}
